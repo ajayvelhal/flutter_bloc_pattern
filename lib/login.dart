@@ -40,9 +40,10 @@ class Login extends StatelessWidget {
               stream: bloc.password,
               builder: (context, snapshot) => TextField(
                 onChanged: bloc.passwordChanged,
+                obscureText: true,
                 decoration: InputDecoration(
-                    hintText: "xyz@gmail.com",
-                    labelText: "Please Enter Email ID",
+                    hintText: "*****",
+                    labelText: "Please Enter Password",
                     errorText: snapshot.error,
                     border: OutlineInputBorder()),
               ),
